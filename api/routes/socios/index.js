@@ -24,7 +24,7 @@ app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     next();
 });
-app.listen(3000);
+app.listen(3000, () => console.log("Server listening on port 3000"));
 
 // Rota para cadastrar um novo usuário
 app.post("/socios", (req, res) => {
